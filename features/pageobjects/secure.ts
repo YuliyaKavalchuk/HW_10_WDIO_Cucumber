@@ -1,7 +1,8 @@
 import {ChainablePromiseElement} from "webdriverio";
+import Page from "./page";
 
- class SecurePage {
-    // static sideMenu: string = 'div[class="styles_sticky__mDnbt"]';
+ class SecurePage extends Page{
+
     public get sideMenuIcon(): ChainablePromiseElement<WebdriverIO.Element>{
         return $('button[class="styles_root__coHaQ styles_burger__HcbjK"]');
     }
