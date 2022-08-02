@@ -4,7 +4,7 @@ import {ChainablePromiseElement} from 'webdriverio';
  * sub page containing specific selectors and methods for a specific page
  */
 
-class LoginPage {
+class MainPage {
     /**
      * define selectors using getter methods
      */
@@ -19,7 +19,7 @@ class LoginPage {
         return $('img[src="https://avatars.mds.yandex.net/get-bunker/61205/9daeaf410906b5794685b7b5bb25dfd2c647fccf/svg"]');
     }
     public get btnBiletyVKinno(): ChainablePromiseElement<WebdriverIO.Element>{
-        return $('img[src=img[src="https://avatars.mds.yandex.net/get-bunker/118781/ae7fbfc1773a6bbd61ee0154628c6fe14bf6959e/svg"]]');
+        return $('img[src="https://avatars.mds.yandex.net/get-bunker/118781/ae7fbfc1773a6bbd61ee0154628c6fe14bf6959e/svg"]');
     }
 
     /**
@@ -50,4 +50,4 @@ class LoginPage {
    }
 }
 
-export default new LoginPage();
+export default new MainPage();

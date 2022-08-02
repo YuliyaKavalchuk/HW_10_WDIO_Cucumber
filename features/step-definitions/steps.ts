@@ -1,33 +1,34 @@
 import {Given, When, Then} from '@wdio/cucumber-framework'
-import LoginPage from "../pageobjects/login.page";
+import MainPage from "../pageobjects/Main.page";
 import SecurePage from "../pageobjects/secure";
 
+
 Given (/^I am on the "main" page/, async () => {
-    await LoginPage.open()
+    await MainPage.open()
 });
 
 When (/^I expand main menu and click on "OnlineMovie" button/, async () => {
     await SecurePage.checkSideMenu()
-    await LoginPage.clickOnline()
+    await MainPage.clickOnline()
 });
 
 When (/^I expand main menu and click on "Filmy" button/, async () => {
     await SecurePage.checkSideMenu()
-    await LoginPage.clickFilmy()
+    await MainPage.clickFilmy()
 });
 
 When (/^I expand main menu and click on "Serialy" button/, async () => {
     await SecurePage.checkSideMenu()
-    await LoginPage.clickSerialy()
+    await MainPage.clickSerialy()
 });
 
 When (/^I expand main menu and click on "Bilety v kino" button/, async () => {
     await SecurePage.checkSideMenu()
-    await LoginPage.clickBiletyVKino()
+    await MainPage.clickBiletyVKino()
 });
 
 Then (/^I should see a side menu/, async () => {
-    await SecurePage.checkSideMenu()
+    await MainPage.checkSideMenu()
 });
 
 Then (/^I should be redirected to the OnlineMovie/, async () => {
