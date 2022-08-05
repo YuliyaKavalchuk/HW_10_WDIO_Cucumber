@@ -8,7 +8,7 @@ import Page from "./page";
     }
 
      public get sideMenuExpanded(): ChainablePromiseElement<WebdriverIO.Element>{
-         return $('div[class="styles_dropdown__MqT__ styles_dropdownOpen__mTn_V styles_openedDropdown__96EpA styles_dropdownDefault__KwZHT"]');
+         return $('a[data-tid="de7c6530"]');
      }
 
     public async checkSideMenu (): Promise<void> {

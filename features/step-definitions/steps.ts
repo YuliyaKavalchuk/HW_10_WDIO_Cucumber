@@ -6,11 +6,11 @@ import filmyPage from "../pageobjects/filmy.page";
 import serialyPage from "../pageobjects/serialy.page";
 import biletyVKinoPage from "../pageobjects/biletyVKino.page";
 
-const pages = {
+const pages: any = {
     main: MainPage
 }
 
-const buttons = {
+const buttons: any = {
     OnlineMovie: onlineMoviesPage,
     Filmy: filmyPage,
     Serialy: serialyPage,
