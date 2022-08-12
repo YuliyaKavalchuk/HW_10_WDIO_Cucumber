@@ -2,3 +2,4 @@ node_modules
 features/tsconfig.json
 featuresTest
 .idea
+allure-results
